@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Login</title>
+    <style>
+        body {
+            background-color:grey;
+        }
+
+        form {
+            margin: 100px auto;
+            width: 30%;
+            padding: 20px;
+            background-color:aliceblue;
+            border-radius: 10px;
+        } 
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        input[type="submit"] {
+            background-color: #4caf50;
+            color: white;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend><h2>Login</h2></legend>
+            <label for="name">Username:</label>
+            <input type="text" name="username" id="username" pattern="[a-zA-Z_0-9]{5,}"><br><br>
+            <label for="pwd">Password:</label>
+            <input type="password" name="pwd" id="pwd" pattern="[a-zA-Z0-9@#$%^&*]{6,}"><br><br>
+            <input type="submit" value="Submit">
+        </fieldset>
+    </form>
+</body>
+</html>

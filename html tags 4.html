@@ -1,0 +1,23 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>form</title>
+</head>
+<body>
+    <form >
+        <input type="text" name="name" id="name" required placeholder="Name" pattern="[A-Za-z]{1+ }"><br><br>
+        <input type="email" name="email" id="email" required placeholder="Email" pattern="[A-Za-z0-9_\-\.]+[@][a-zA-Z0-9]+[\.][a-zA-Z]{2,3}"><br><br>
+        <input type="password" name="pwd" id="pwd" required placeholder="Password" pattern="[a-zA-Z0-9!@#$%^&*()]{6,}"><br><br>
+        <label for="Dob">DOB: </label>
+        <input type="date"><br><br>
+        <label for="Gender">Gender</label>
+        <input type="radio" name="Gender" id="Gender" value="Male">Male
+        <input type="radio" name="Gender" id="Gender" value="Female">Female
+        <input type="radio" name="Gender" id="Gender" value="Others">Others <br>
+        <p>Remarks</p>
+        <textarea cols="30" rows="10" placeholder="please enter your additional remarks (if any)"></textarea><br><br>
+        <input type="submit">
+    </form>
+</body>
+</html>
